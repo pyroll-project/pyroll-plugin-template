@@ -1,3 +1,0 @@
-# Model approach
-
-Describe the basics of the models used here...
