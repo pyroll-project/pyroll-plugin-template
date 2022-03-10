@@ -1,3 +1,0 @@
-# Usage of the Plugin
-
-Describe the basics of using your plugin here...

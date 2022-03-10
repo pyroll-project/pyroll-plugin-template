@@ -10,7 +10,9 @@ Template for PyRoll Plugin Repositories
 - Update the `pyproject.toml` with your metadata. It is recommended to use [`poetry`](https://python-poetry.org) to
   maintain dependencies, as is preconfigured.
 
-- Place markdown documentation in the `docs` folder. It is recommended to provide model information and usage
-  instructions separately.
+- Place documentation in the `docs` folder:
+    - it is recommended to provide a printable documentation based on the `docs.tex` template
+    - include the result PDF in the commit and link it from `README.md` like [so](docs/docs.pdf)
+    - include model and usage information in the documentation
 
 
