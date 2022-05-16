@@ -36,7 +36,7 @@
 \RequirePackage[hidelinks]{hyperref}
 
 \RequirePackage{xcolor}
-\RequirePackage{listings} % Quellcode darstellen
+\RequirePackage{listings}
 \definecolor{keywords}{HTML}{0F54D6}
 \definecolor{comments}{HTML}{248700}
 \definecolor{strings}{HTML}{8C6C41}
