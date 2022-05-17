@@ -5,6 +5,9 @@ description = "Plugin for PyRoll providing ..."
 authors = [
 ]
 license = "BSD-3-Clause"
+packages = [
+    { include = "pyroll" }
+]
 
 [tool.poetry.dependencies]
 python = ">= 3.9, <3.11"
