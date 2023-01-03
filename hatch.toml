@@ -1,6 +1,6 @@
 [build]
-include = [
-    "pyroll/*" # place your package in the pyroll namespace
+packages = [
+    "pyroll" # place your package in the pyroll namespace
 ]
 
 [version]
