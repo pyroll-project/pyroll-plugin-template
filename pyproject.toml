@@ -1,22 +1,17 @@
-[tool.poetry]
-name = "pyroll-<plugin-name>" # insert the name of yout plugin here
-version = "2.0.0a" # major version must equal the major version of pyroll-core
+[project]
+name = "pyroll-plugin-name" # insert the name of yout plugin here
 description = "Plugin for PyRoll providing ..." # edit the description
 authors = [
+    { name = "Your Name", email = "yourmail@server.com" }
 ]
 license = "BSD-3-Clause" # may be changed to your wishes
-packages = [
-    { include = "pyroll" } # place your package in the pyroll namespace
+requires-python = ">=3.9, <4.0"
+dependencies = [
+    "pyroll-core ~= 2.0a",
 ]
 
-[tool.poetry.dependencies]
-python = ">=3.9, <4.0"
-pyroll-core = "^2.0.0a"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^7.2.0"
-pygments = "^2.14.0" # for syntax highlighting in LaTeX docs, remove if not needed
+dynamic = ["version"]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
