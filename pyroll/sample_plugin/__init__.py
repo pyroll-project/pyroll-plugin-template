@@ -1,6 +1,6 @@
 from pyroll.core import Profile, Hook
 
-Profile.new_hook = Hook[float]
+Profile.new_hook = Hook[float]()
 """Define a new hook on profiles."""
 
 
