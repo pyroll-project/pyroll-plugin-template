@@ -36,32 +36,7 @@
 \RequirePackage[hidelinks]{hyperref}
 
 \RequirePackage{xcolor}
-\RequirePackage{listings}
-\definecolor{keywords}{HTML}{0F54D6}
-\definecolor{comments}{HTML}{248700}
-\definecolor{strings}{HTML}{8C6C41}
-\definecolor{classes}{HTML}{6B2FBA}
-\definecolor{ListingBackground}{rgb}{0.9,0.9,0.9}
-\lstset{
-    showspaces=false,
-    showtabs=false,
-    breaklines=true,
-    showstringspaces=false,
-    breakatwhitespace=true,
-    commentstyle=\color{comments},
-    keywordstyle=\color{keywords},
-    stringstyle=\color{strings},
-    basicstyle=\ttfamily\small,
-    emphstyle=\color{classes},
-    backgroundcolor=\color{ListingBackground},
-    frame=tb,
-    framexleftmargin=0.5em,
-    framexrightmargin=0.5em,
-    framextopmargin=0.5em,
-    framexbottommargin=0.5em,
-}
-
-\lstnewenvironment{python}[1][]{\lstset{language=python,#1}}{}
-\lstnewenvironment{shell}[1][]{\lstset{language=bash,#1}}{}
+\RequirePackage{minted}
+\setminted{autogobble}
 
 \providecommand{\abs}[1]{\lvert#1\rvert}

@@ -4,6 +4,8 @@
 % Preamble
 \documentclass[11pt]{PyRollDocs}
 
+\addbibresource{refs.bib}
+
 % Document
 \begin{document}
 
@@ -18,7 +20,7 @@
 
     \section{Model approach}\label{sec:model-approach}
 
-    Some model equations:
+    Some model equations~\cite{article1}:
 
     \[
         a^2 + b^2 = c^2
@@ -29,15 +31,19 @@
 
     Shell command code blocks:
 
-    \begin{shell}[gobble=8] % remove additional leading spaces (1 tab = 4 spaces => 8 spaces = 2 tabs)
-        pyroll input-py solve report
-    \end{shell}
+    %! language = Shell Script
+    \begin{minted}{shell}
+pyroll input-py solve report
+    \end{minted}
 
     Python code blocks:
 
-    \begin{python}[gobble=8] % remove additional leading spaces (1 tab = 4 spaces => 8 spaces = 2 tabs)
+    %! language = Python
+    \begin{minted}{python}
         def python_function():
-        return None
-    \end{python}
+            return None
+    \end{minted}
+
+    \printbibliography
 
 \end{document}
