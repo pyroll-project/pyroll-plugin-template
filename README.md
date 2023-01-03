@@ -34,7 +34,7 @@ To build the docs use (needs a working LaTeX installation)
 
 To run the tests use
 
-    hatch run test:run
+    hatch run test:all
 
 The test environment is preconfigured to test with Python 3.9, 3.10 and 3.11.
 The tests are skipped for the respective version, if it can not be found.
