@@ -1,3 +1,5 @@
+VERSION = "2.0.0"
+
 from pyroll.core import Profile, Hook
 
 Profile.new_hook = Hook[float]()
