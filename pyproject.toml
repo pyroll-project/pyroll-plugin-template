@@ -32,6 +32,13 @@ classifiers = [
 
 dynamic = ["version"]
 
+[project.urls]
+Homepage = "https://pyroll.readthedocs.io"
+
+# change these URLs to your needs
+Repository = "https://github.com/pyroll-project/pyroll-plugin-template"
+Documentation = "https://github.com/pyroll-project/pyroll-plugin-template/blob/main/docs/docs.pdf"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
